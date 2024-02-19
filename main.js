@@ -48,6 +48,6 @@ document.querySelector('form').addEventListener('submit', (e)=>{
     // console.log(index); // 0, 1, 2
     // console.log(array); // same myArray object 3 times
  
-    console.log("this",Object.entries(element))
+    console.log("this",element)
 });
 })
