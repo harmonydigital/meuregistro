@@ -5,6 +5,7 @@ let msg=document.getElementById ("msg")
 let arrInputs=Array.from(inputs)
 let step=document.querySelector('form').getAttribute('step')
 let jsonArr=[]
+ 
 
 document.querySelector('form').addEventListener('submit', (e)=>{
   e.preventDefault()
@@ -20,8 +21,8 @@ document.querySelector('form').addEventListener('submit', (e)=>{
   
  if(step=="step-1"){  
    setTimeout(()=>{
-     window.location.href="https://harmonydigital.github.io/Cadastro-Prianti/step-2.html" 
-    
+    // window.location.href="https://harmonydigital.github.io/Cadastro-Prianti/step-2.html" 
+     // console.log(localStorage.getItem(step))
    },1000);
  }
  if(step=="step-2"){  
@@ -41,4 +42,12 @@ document.querySelector('form').addEventListener('submit', (e)=>{
  }
   
   
+ 
+ jsonArr.forEach((element, index, array) => {
+    // console.log(element); // 100, 200, 300
+    // console.log(index); // 0, 1, 2
+    // console.log(array); // same myArray object 3 times
+    console.log(element); // same myArray object 3 times
+    
+});
 })
