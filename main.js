@@ -36,7 +36,7 @@
      // ===============================step1==============================
 
      setTimeout(()=>{
-         window.location.href="https://harmonydigital.github.io/Cadastro-Prianti/step-2.html" 
+         window.location.href="https://harmonydigital.github.io/meuregistro/step-2.html" 
 
       
      },1000);
@@ -63,7 +63,7 @@
 
      // ===============================step1==============================
      setTimeout(()=>{
-      window.location.href="https://harmonydigital.github.io/Cadastro-Prianti/step-3.html" 
+      window.location.href="https://harmonydigital.github.io/meuregistro/step-3.html" 
      },1000);
    }
    if(step=="step-3"){  
@@ -90,7 +90,7 @@
      // ===============================step3==============================
 
      setTimeout(()=>{
-      window.location.href="https://harmonydigital.github.io/Cadastro-Prianti/step-4.html" 
+      window.location.href="https://harmonydigital.github.io/meuregistro/step-4.html" 
      },1000);
    }
    if(step=="step-4"){  
