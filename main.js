@@ -31,7 +31,7 @@
        cpf:icpf  
      }]
      
-      localStorage.setItem(step, step1); 
+      localStorage.setItem(step, Array.from(step1)); 
 
      // ===============================step1==============================
 
@@ -59,7 +59,7 @@
        nomepai:inomepai
      }]
      
-      localStorage.setItem(step, step2); 
+      localStorage.setItem(step, Array.from(step2)); 
 
      // ===============================step1==============================
      setTimeout(()=>{
