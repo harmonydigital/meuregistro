@@ -69,24 +69,26 @@
    if(step=="step-3"){  
      
             
-   // ===============================step2==============================
-     var irg=document.getElementById('irg').value
-     var iorgaoemissor=document.getElementById('iorgaoemissor').value
-     var idataemissao=document.getElementById('idataemissao').value
-     var inomemae=document.getElementById('inomemae').value
-     var inomepai=document.getElementById('inomepai').value
+  // ===============================step3==============================
+     var iendereco=document.getElementById('iendereco').value
+     var inumero=document.getElementById('inumero').value
+     var icomplemento=document.getElementById('icomplemento').value
+     var ibairro=document.getElementById('ibairro').value
+     var icep=document.getElementById('icep').value
+   
 
      step3=[{
-       rg:irg,
-       orgaoemissor:iorgaoemissor,
-       dataemissao:idataemissao,
-       nomemae:inomemae,
-       nomepai:inomepai
+       Endereco:iendereco,
+       Numero:inumero,
+       Complemento:icomplemento,
+       Bairro:ibairro,
+       CEP:icep
      }]
      
       localStorage.setItem(step, Array.from(step3)); 
 
-     // ===============================step1==============================
+     // ===============================step3==============================
+
      setTimeout(()=>{
       window.location.href="https://harmonydigital.github.io/Cadastro-Prianti/step-4.html" 
      },1000);
