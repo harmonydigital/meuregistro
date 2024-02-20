@@ -1,4 +1,4 @@
-  const form = document.getElementById ("dataSubmit")
+ const form = document.getElementById ("dataSubmit")
 
   let inputs=document.querySelectorAll("input")
   let msg=document.getElementById ("msg")
@@ -118,7 +118,11 @@
      }]
      
       localStorage.setItem(step, Array.from(step4)); 
+      console.log('step2',step1)
+      console.log('step2',step2)
+      console.log('step3',step3)
       console.log('step4',step4)
+     
      // ===============================step1==============================
      
      setTimeout(()=>{
