@@ -32,11 +32,11 @@
      }
      
       localStorage.setItem(step, Array.from(step1)); 
-
+      console.log("step1",step1)
      // ===============================step1==============================
 
      setTimeout(()=>{
-         window.location.href="https://harmonydigital.github.io/meuregistro/step-2.html" 
+//window.location.href="https://harmonydigital.github.io/meuregistro/step-2.html" 
 
       
      },1000);
