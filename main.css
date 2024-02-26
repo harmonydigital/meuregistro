@@ -1,5 +1,5 @@
 body{
-  background-color:#eeeeee;
+  background-color:#fff;
 }
 
 input.form-control {
@@ -9,8 +9,36 @@ input.form-control {
 .container {
     max-width: 600px;
 }
-
+button {
+    border-radius: 90px !important;
+    width: 45%;
+}
 .card{
-
+    padding: 15px;
     background-color:#fff;
+}
+img.rounded {
+    width: 90px;
+    margin: 20px auto -19px;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px 20px 0px;
+}
+button.navbar-brand {
+    background: transparent;
+    border: 0px;
+}
+
+input.form-control {
+    height: 50px;
+    margin: 0px auto 10px;
+    border: 0;
+    border-bottom: 2px solid #b1b1b1a6;
+    box-shadow: inherit;
+    border-radius: 0;
+}
+.form-control[type=file] {
+    border: 0;
 }

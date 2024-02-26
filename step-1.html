@@ -3,17 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cadastro</title>
+    <title>Seven Cadastro Crédito imobiliário</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="main.css" rel="stylesheet">
    
 </head>
   <body>
+    <header>
+      <nav class="navbar bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://sevencreditoimobiliario.com.br/" style='width:70px'>
+            <i class="fa-solid fa-chevron-left" style='color:white;'></i>
+          </a>
+        </div>
+      </nav>
+    </header>
     
     <main>
+      <div class="text-center m-3">
+        <img src="logo.png" class="rounded" alt="...">
+      </div>
       
         <div class="container py-5">
-          <h1 class="h2">Cadastro de Usuários </h1>
+          <h1 class="h2">Aprovação de Crédito</h1>
           <p>Preencha os campos com seus dados.</p>
          
             <div class="card" >
@@ -22,7 +34,7 @@
           <form id="dataSubmit" step="step-1">
             <div class="form-group">
               <label for="formGroupExampleInput">Nome completo</label>
-              <input type="text" class="form-control" id="iname" placeholder="Seu nome completo " aria-label="large" required>
+              <input autofocus type="text" class="form-control" id="iname" placeholder="Digite seu nome completo " aria-label="large" required>
             </div>
             <div class="form-group">
               <label for="">Email</label>
@@ -30,13 +42,18 @@
             </div>
             <div class="form-group">
               <label for="formGroupExampleInput">Telefone</label>
-              <input type="number" class="form-control" id="itelefone" placeholder="Seu Telefone" aria-label="large" required>
+              <input type="number" class="form-control" id="itelefone" placeholder="99 9999-9999" aria-label="large" required>
             </div>
-            <div class="form-group">
-              <label for="formGroupExampleInput">CPF</label>
-              <input type="number" class="form-control" id="icpf" placeholder="000.000.000-00" aria-label="large" required>
+            
+            <div class="mb-3"> 
+              <label for="formFileMultiple" class="form-label">Envie uma imagem do seu CPF.</label> 
+              <input class="form-control" type="file" id="cpfimage" multiple> 
             </div>
-           
+            
+            <div class="mb-3"> 
+              <label for="formFileMultiple" class="form-label">Envie uma imagem da sua CNH.</label> 
+              <input class="form-control" type="file" id="formFileMultiple" multiple> 
+            </div>
 
             <div class="d-flex flex-row-reverse">
                <button type="submit" class="submit btn btn-primary mt-3">Avançar</button>
@@ -44,18 +61,18 @@
             </div>
           </form>
        
-         </div>
-       </div>
+         </div>       </div>
       </div>
 
     </main>
     <footer>
-        <p class="text-center">Copyright Prianti © 2024</p>
+        <p class="text-center">Copyright Seven Crédito Imobiliário © 2024</p>
     </footer>
     
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <script src="all.js"></script>
 </body>
 </html>

@@ -22,21 +22,22 @@
      var iname=document.getElementById('iname').value
      var iemail=document.getElementById('iemail').value
      var itelefone=document.getElementById('itelefone').value
-     var icpf=document.getElementById('icpf').value
+     var cpfimage=document.getElementById('cpfimage')		
 
      step1={
        name:iname,
        email:iemail,
        telefone:itelefone,
-       cpf:icpf  
+   
      }
      
       localStorage.setItem(step, Array.from(step1)); 
       console.log("step1",step1)
+      console.log("cpfimage",cpfimage)
      // ===============================step1==============================
 
      setTimeout(()=>{
-//window.location.href="https://harmonydigital.github.io/meuregistro/step-2.html" 
+  window.location.href="https://sevencreditoimobiliario.com.br/meucredito/step-2.html" 
 
       
      },1000);
@@ -63,7 +64,7 @@
 
      // ===============================step1==============================
      setTimeout(()=>{
-      window.location.href="https://harmonydigital.github.io/meuregistro/step-3.html" 
+      window.location.href="https://sevencreditoimobiliario.com.br/meucredito/step-3.html" 
      },1000);
    }
    if(step=="step-3"){  
@@ -90,7 +91,7 @@
      // ===============================step3==============================
 
      setTimeout(()=>{
-      window.location.href="https://harmonydigital.github.io/meuregistro/step-4.html" 
+      window.location.href="https://sevencreditoimobiliario.com.br/meucredito/step-4.html" 
      },1000);
    }
    if(step=="step-4"){  
@@ -126,7 +127,40 @@
      // ===============================step1==============================
      
      setTimeout(()=>{
-        // window.location.href="https://harmonydigital.github.io/Cadastro-Prianti/sucess.html" 
+
+				 window.location.href="https://sevencreditoimobiliario.com.br/meucredito/step-5.html" 
+     },1000);
+   }
+   
+    if(step=="step-5"){  
+     
+     console.log(localStorage.getItem(step1)); 
+     
+      // ===============================step5==============================
+     
+
+     step4=[{
+       refbancarias:irefbancarias,
+       emprestimos:iemprestimos,
+       empinstituicao:iempinstituicao,
+       ivaloremp:ivaloremp,
+       ivaloremp:ivaloremp,
+       idataemp:idataemp,
+       iqtdparcelas:iqtdparcelas       
+  
+     }]
+     
+      localStorage.setItem(step, Array.from(step4)); 
+      console.log('step2',step1)
+      console.log('step2',step2)
+      console.log('step3',step3)
+      console.log('step4',step4)
+     
+     // ===============================step1==============================
+     
+     setTimeout(()=>{
+                window.location.href="https://sevencreditoimobiliario.com.br/meucredito/sucess.html" 
+				 
      },1000);
    }
 
