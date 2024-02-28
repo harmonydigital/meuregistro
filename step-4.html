@@ -11,12 +11,43 @@
   <body>
     <header>
       <nav class="navbar bg-primary">
-        <div class="container-fluid">
-          <button class="navbar-brand" style='width:70px' onclick="history.back()">
-            <i class="fa-solid fa-chevron-left" style='color:white;'></i>
-          </button>
-        </div>
-      </nav>
+            <div class="container-fluid">
+               <a class="navbar-brand" onclick="history.back()" style="width:70px">
+               <svg class="svg-inline--fa fa-chevron-left" style="color: white;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-left" style="color:white;"></i> Font Awesome fontawesome.com -->
+               </a>
+               <div class="dropdown  bottom-0 end-0  bd-mode-toggle">
+                  <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                  
+                     <svg style="color: white;" class="svg-inline--fa fa-ellipsis-vertical" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-vertical" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" data-fa-i2svg=""><path fill="currentColor" d="M64 360c30.9 0 56 25.1 56 56s-25.1 56-56 56s-56-25.1-56-56s25.1-56 56-56zm0-160c30.9 0 56 25.1 56 56s-25.1 56-56 56s-56-25.1-56-56s25.1-56 56-56zM120 96c0 30.9-25.1 56-56 56S8 126.9 8 96S33.1 40 64 40s56 25.1 56 56z"></path></svg><!-- <i style="color:white;" class="fa-solid fa-ellipsis-vertical"> </i> Font Awesome fontawesome.com -->
+                     <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+                     <li>
+                        <button type="button" onclick="location.href='https://sevencreditoimobiliario.com.br'" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                           <svg class="bi me-2 opacity-50" width="1em" height="1em">
+                              <use href="#sun-fill"></use>
+                           </svg>
+                           Seven 
+                           <svg class="bi ms-auto d-none" width="1em" height="1em">
+                              <use href="#check2"></use>
+                           </svg>
+                        </button>
+                     </li>
+                     <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                           <svg class="bi me-2 opacity-50" width="1em" height="1em">
+                              <use href="#sun-fill"></use>
+                           </svg>
+                           Login 
+                           <svg class="bi ms-auto d-none" width="1em" height="1em">
+                              <use href="#check2"></use>
+                           </svg>
+                        </button>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
     </header>
     
     <main>

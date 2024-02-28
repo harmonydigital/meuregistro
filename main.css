@@ -1,7 +1,17 @@
 body{
   background-color:#fff;
 }
-
+nav svg {
+ 
+    font-size: 18px;
+}
+label {
+   
+    font-weight: 600;
+}
+footer p {
+    font-size: 11px;
+}
 input.form-control {
     height: 50px;
     margin: 0px auto 10px;
@@ -11,7 +21,17 @@ input.form-control {
 }
 button {
     border-radius: 90px !important;
+   
+}
+.dropdown-toggle::after {
+    display: none;
+    
+}
+@media(min-width:500px){
+button {
+    
     width: 45%;
+}
 }
 .card{
     padding: 15px;

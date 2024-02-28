@@ -119,10 +119,7 @@
      }]
      
       localStorage.setItem(step, Array.from(step4)); 
-      console.log('step2',step1)
-      console.log('step2',step2)
-      console.log('step3',step3)
-      console.log('step4',step4)
+  
      
      // ===============================step1==============================
      
@@ -139,16 +136,7 @@
       // ===============================step5==============================
      
 
-     step4=[{
-       refbancarias:irefbancarias,
-       emprestimos:iemprestimos,
-       empinstituicao:iempinstituicao,
-       ivaloremp:ivaloremp,
-       ivaloremp:ivaloremp,
-       idataemp:idataemp,
-       iqtdparcelas:iqtdparcelas       
-  
-     }]
+ 
      
       localStorage.setItem(step, Array.from(step4)); 
       console.log('step2',step1)
@@ -156,10 +144,10 @@
       console.log('step3',step3)
       console.log('step4',step4)
      
-     // ===============================step1==============================
+     // ===============================step5==============================
      
      setTimeout(()=>{
-                window.location.href="https://sevencreditoimobiliario.com.br/meucredito/sucess.html" 
+            //    window.location.href="https://sevencreditoimobiliario.com.br/meucredito/sucess.html" 
 				 
      },1000);
    }

@@ -1,65 +1,108 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Seven Cadastro Crédito imobiliário</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="main.css" rel="stylesheet">
-   
-</head>
-  <body>
-    <header>
-      <nav class="navbar bg-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="https://sevencreditoimobiliario.com.br/" style='width:70px'>
-            <i class="fa-solid fa-chevron-left" style='color:white;'></i>
-          </a>
-        </div>
-      </nav>
-    </header>
-    
-    <main>
-      <div class="text-center m-3">
-        <img src="logo.png" class="rounded" alt="...">
-      </div>
-      
-        <div class="container py-5">
-          <h1 class="h2">Video Pessoal</h1>
-          <p>Grave um video rápido, como prova de vida.</p>
-         
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Seven Cadastro Crédito imobiliário</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link href="main.css" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <nav class="navbar bg-primary">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="https://sevencreditoimobiliario.com.br/" style='width:70px'>
+               <i class="fa-solid fa-chevron-left" style='color:white;'></i>
+               </a>
+               <div class="dropdown  bottom-0 end-0  bd-mode-toggle">
+                  <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+                     id="bd-theme"
+                     type="button"
+                     aria-expanded="false"
+                     data-bs-toggle="dropdown"
+                     aria-label="Toggle theme (auto)">
+                  
+                     <i style='color:white;' class="fa-solid fa-ellipsis-vertical"> </i>
+                     <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+                     <li>
+                        <button type="button" onclick="location.href='https://sevencreditoimobiliario.com.br'"    class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                           <svg class="bi me-2 opacity-50" width="1em" height="1em">
+                              <use href="#sun-fill"></use>
+                           </svg>
+                           Seven 
+                           <svg class="bi ms-auto d-none" width="1em" height="1em">
+                              <use href="#check2"></use>
+                           </svg>
+                        </button>
+                     </li>
+                     <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                           <svg class="bi me-2 opacity-50" width="1em" height="1em">
+                              <use href="#sun-fill"></use>
+                           </svg>
+                           Login 
+                           <svg class="bi ms-auto d-none" width="1em" height="1em">
+                              <use href="#check2"></use>
+                           </svg>
+                        </button>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <main>
+         <div class="text-center m-3">
+            <img src="logo.png" class="rounded" alt="...">
+         </div>
+         <div class="container py-5">
+            <h1 class="h2">Grave video pessoal</h1>
+            <p>Envie um video rápido como prova de vida.</p>
             <div class="card" >
-          <div class="card-body">
-          
-          <form id="dataSubmit" step="step-5">
-           
-            <div class="form-group">
-              <label for="formFileMultiple" class="form-label">Grave seu video.</label> 
-             
+               <div class="card-body">
+                  <form id="dataSubmit" step="step-5">
+                     <div class="form-group">
+                        <label for="formFileMultiple" class="form-label">Grave seu video.</label> 
+                     </div>
+                     <video id='video' autoplay></video>
+                     <div id='status'></div>
+                     <div class="d-flex justify-content-between">
+                        <button type="button" onclick="history.back()" class="btn btn-light mt-3">Voltar</button>
+                        <button type="submit" class="btn btn-primary mt-3">Enviar Cadastro</button>
+                     </div>
+                  </form>
+               </div>
             </div>
-          <video id='video' autoplay></video>
-
-            <div class="d-flex justify-content-between">
-              
-			 
-				    <button type="button" onclick="history.back()" class="btn btn-light mt-3">Voltar</button>
-					     <button type="submit" class="btn btn-primary mt-3">Enviar Cadastro</button>
-            </div>
-          </form>
-       
-         </div>       </div>
-      </div>
-
-    </main>
-    <footer>
-        <p class="text-center">Copyright Seven Crédito Imobiliário © 2024</p>
-    </footer>
-    
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    <script src="camera.js"></script>
-    <script src="main.js"></script>
-    <script src="all.js"></script>
-</body>
+         </div>
+      </main>
+      <footer>
+         <p class="text-center"> Seven Crédito Imobiliário © 2024</p>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+      <script src="camera.js"></script>
+      <script src="main.js"></script>
+      <script src="all.js"></script>
+   </body>
 </html>
+
+
+
+<script>
+
+  apiKey: "AIzaSyD5PzIgcmI8oKaitM1Orstt2vJ2Utmtpjo",
+  authDomain: "registerdata-bc1b8.firebaseapp.com",
+  projectId: "registerdata-bc1b8",
+  storageBucket: "registerdata-bc1b8.appspot.com",
+  messagingSenderId: "810207129485",
+  appId: "1:810207129485:web:95838fb8ca2ef3b7bfd7c4"
+  
+  
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig); 
+  const db = firebase.firestore();
+  
+</script>
+  
