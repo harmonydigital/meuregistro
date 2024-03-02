@@ -45,9 +45,9 @@
               console.log('percentVal',percentVal)
 
               progressbar.style.cssText='display:block'
-              progressbar.style.width=percentVal+"%"
-             
+              progressbar.style.width=percentVal+"%" 
               uploadPercent.innerHTML=percentVal+"%"
+              
               
           },(err)=>{
               console.log(err) 
