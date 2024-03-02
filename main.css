@@ -16,6 +16,17 @@ input.form-control {
     height: 50px;
     margin: 0px auto 10px;
 }
+
+.box-dotted{
+        border: 1px dotted;
+    padding: 20px 10px;
+    text-align: center;
+    margin: 30px auto;
+}
+.imageUpload {
+    margin: 20px auto 10px;
+    display: none
+}
 .container {
     max-width: 600px;
 }
@@ -23,9 +34,23 @@ button {
     border-radius: 90px !important;
    
 }
+.progressbar {
+    display: none;
+}
+div#progressbar {
+    width: 0%;
+    height: 7px;
+    background: #599bff;
+    border-radius: 30px;
+}
 .dropdown-toggle::after {
     display: none;
     
+}
+.progressbar {
+    background: #0d6efd;
+    width: 0%;
+    height: 4px;
 }
 @media(min-width:500px){
 button {
@@ -61,4 +86,5 @@ input.form-control {
 }
 .form-control[type=file] {
     border: 0;
+    height: auto;
 }

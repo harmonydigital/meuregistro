@@ -13,7 +13,7 @@
     <header>
   <nav class="navbar bg-primary">
             <div class="container-fluid">
-               <a class="navbar-brand" href="https://sevencreditoimobiliario.com.br/" >
+               <a class="navbar-brand" href="https://sevencreditoimobiliario.com.br/" style="width:70px">
                <svg class="svg-inline--fa fa-chevron-left" style="color: white;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-left" style="color:white;"></i> Font Awesome fontawesome.com -->
                </a>
                <div class="dropdown  bottom-0 end-0  bd-mode-toggle">
@@ -77,19 +77,19 @@
               <input type="number" class="form-control" id="itelefone" placeholder="99 9999-9999" aria-label="large" required>
             </div>
             
-            <div class="mb-3 box-dotted"> 
+            <div class="mb-3"> 
               <label for="formFileMultiple" class="form-label">Envie uma imagem do seu CPF.</label> 
               <input class="form-control" type="file" id="cpfimage" multiple> 
-              <div id="uploadPercent">  </div>
-              <div id="progressbar">  </div>
                <div class="imageUpload">  
-                <img id='imageCPF' alt='' class="img-fluid">
+                <img alt='' class="img">
               </div>
-                 <button type="button" id="sendimage" class="btn btn-primary mt-3">Enviar imagem</button>
-              
+               <div class="d-flex flex-row-between">  
+                <button type="button" id="sendimage" class="btn btn-primary">Enviar CPF</button>
+                <span id='percent'></span>
+              </div>
             </div>
             
-            <div class="mb-3 box-dotted"> 
+            <div class="mb-3"> 
               <label for="formFileMultiple" class="form-label">Envie uma imagem da sua CNH.</label> 
               <input class="form-control" type="file" id="formFileMultiple" multiple> 
             </div>
@@ -108,13 +108,62 @@
         <p class="text-center">Copyright Seven Crédito Imobiliário © 2024</p>
     </footer>
     
-    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script> 
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="main.js"></script>
     <script src="all.js"></script>
-    <script src="uploadjs.js"></script>
-
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
+  
+	<script type='module'>
  
+  // import { getFirestore, storage } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js'
+	   const firebaseConfig = {
+
+        apiKey: "AIzaSyD5PzIgcmI8oKaitM1Orstt2vJ2Utmtpjo",
+        authDomain: "registerdata-bc1b8.firebaseapp.com",
+        projectId: "registerdata-bc1b8",
+        storageBucket: "registerdata-bc1b8.appspot.com",
+        messagingSenderId: "810207129485",
+        appId: "1:810207129485:web:95838fb8ca2ef3b7bfd7c4"
+
+  	  }; 
+	  
+	    // Initialize Firebase
+		  firebase.initializeApp(firebaseConfig); 
+      const db = firebase.firestore();
+		   
+    // Create a storage reference from our storage service
+      const storageRef = firebase.storage();
+
+      var fileItem;
+      var fileName;
+      var percentIten;
+      var uploadPercent=document.getElementById('percentUpload')
+
+      document.getElementById('cpfimage').addEventListener('change',(e)=>{
+             fileItem=e.target.files[0];
+             fileName=fileItem.name;
+
+          console.log("fileName",fileName)
+
+
+      })
+
+
+      document.getElementById('sendimage').addEventListener('click',(e)=>{
+          console.log('send')
+
+          let storageRef=firebase.firestore().ref("images/")
+          let uploadTask=firebase.firestore().put(fileItem)
+
+      })
+
+
+
+
+
+
+  </script>
 </body>
 </html>
